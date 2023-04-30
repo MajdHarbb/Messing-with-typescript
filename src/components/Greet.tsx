@@ -1,8 +1,10 @@
 import React from 'react'
-
-function Greet() {
+type GreetProps = {
+    name: string
+}
+function Greet(props: GreetProps) {
   return (
-    <div>Greet</div>
+    <div>Welcome {props.name}! You have 10 unreaed messages. </div>
   )
 }
 
